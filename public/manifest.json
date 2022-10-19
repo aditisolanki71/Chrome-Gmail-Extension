@@ -8,5 +8,8 @@
 		"16": "JustNotSorry-16.png",
 		"48": "JustNotSorry-16.png",
 		"128": "JustNotSorry-16.png"
-	}
+	},
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
 }
