@@ -1,15 +1,32 @@
 {
 	"manifest_version": 3,
-	"name": "Chrome Gmail Extension",
+	"name": "Gmail Extension",
 	"author": "Darwin",
 	"version": "1.0.1",
 	"description": "Provide link on Domain name",
-  "icons": {
+	"icons": {
 		"16": "JustNotSorry-16.png",
 		"48": "JustNotSorry-16.png",
 		"128": "JustNotSorry-16.png"
 	},
-  "chrome_url_overrides": {
-    "newtab": "index.html"
-  }
+	"content_scripts": [
+		{
+		  "matches": [
+			"https://mail.google.com/*",
+			"https://outlook.office.com/*",
+			"https://outlook.live.com/*",
+			"https://outlook.office365.com/*"
+		  ],
+		  "js": ["static/js/main.11970f40.js"]
+		}
+	],
+	"chrome_url_overrides": {
+		"newtab": "index.html"
+	},
+
+	"permissions": [
+		"storage",
+		"declarativeContent",
+		"notifications"
+	  ]
 }
