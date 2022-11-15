@@ -1,0 +1,24 @@
+[
+   {
+     "displayLabel": ["Keka"],
+     "pattern": "\\b(keka)\\b",
+     "source": "http://www.taramohr.com/8-ways-women-undermine-themselves-with-their-words/",
+     "message": "\"Keka\" demeans what you have to say. \"Just\" shrinks your power. It's time to say goodbye to the justs. --Tara Sophia Mohr",
+     "link": "https://simform.keka.com/name='aditi'&surname='solanki'"
+   },
+   {
+     "displayLabel": ["Simform"],
+     "pattern": "\\b(simform)\\b",
+     "source": "http://www.taramohr.com/8-ways-women-undermine-themselves-with-their-words/",
+     "message": "\"Simform\" communicates a sense of surprise that you have something to say. Of course you want to add something. Of course you have questions. There's nothing surprising about it.  --Tara Sophia Mohr",
+     "link": "https://www.simform.com/name='aditi'&surname='solanki'"
+   },
+   {
+     "displayLabel": ["Sorry"],
+     "pattern": "\\b(sorry)\\b",
+     "source": "http://www.fastcompany.com/3032112/strong-female-lead/sorry-not-sorry-why-women-need-to-stop-apologizing-for-everything",
+     "message": "Using \"sorry\" frequently undermines your gravitas and makes you appear unfit for leadership. --Sylvia Ann Hewlett",
+     "link": "https://sorry.keka.com/name='sorry'&surname='solanki'"
+   }
+ ]
+ 

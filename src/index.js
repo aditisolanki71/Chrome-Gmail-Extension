@@ -4,11 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const createAppRoot = () => {
+  const uiRoot = document.createElement('div');
+  return ReactDOM.createRoot(document.body.appendChild(uiRoot));
+};
+
+const root = createAppRoot();
+
+
 root.render(
-  <React.StrictMode>
+  <React.Fragment>
     <App />
-  </React.StrictMode>
+  </React.Fragment>
 );
 
 // If you want to start measuring performance in your app, pass a function
