@@ -57,11 +57,7 @@ class GmailGenerateLink extends React.Component {
             : findRanges(email, patterns);
     
         console.log("new warnings",newWarnings);
-        this.setState(({ parentNode }) =>
-          parentNode.id !== email.offsetParent.id
-            ? { parentNode: email.offsetParent, warnings: newWarnings }
-            : { parentNode, warnings: newWarnings }
-        );
+        this.setState({ parentNode : email.offsetParent, warnings: newWarnings });
         console.log("parent node is",this.state.parentNode);
       }
     

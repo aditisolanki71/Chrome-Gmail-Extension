@@ -21,7 +21,8 @@ export function getHighlight(rect, coord) {
           zIndex: 10,
           position: 'absolute',
           padding: '0px',
-          color: 'green'
+          color: 'green',
+          border: "1px solid blue"
         },
         position: coord.top <= 200 ? 'bottom' : 'top',
       }
