@@ -47,13 +47,20 @@ class GmailGenerateLink extends React.Component {
           return;
         }
         console.log("child node email",email.childNodes);
-        const temp = Array.from(email.childNodes).filter((node) => node.textContent !== '').flatMap((text) => findRanges(text, patterns));
-        console.log("temp",temp);
+        // const temp = Array.from(email.childNodes).filter((node) => node.textContent !== '').flatMap((text) => findRanges(text, patterns));
+        // console.log("temp",temp);
         const newWarnings =
           email.childNodes.length > 0
             ? Array.from(email.childNodes)
-                .filter((node) => node.textContent !== '')
-                .flatMap((text) => findRanges(text, patterns))
+                .filter(
+                  (node) =>
+                    node.textContent !== '' &&
+                    node.tagName !== "BR" &&
+                    node.textContent !== "\n"
+                )
+                .flatMap((text) => {
+                  return findRanges(text, patterns)
+                })
             : findRanges(email, patterns);
     
         console.log("new warnings",newWarnings);
